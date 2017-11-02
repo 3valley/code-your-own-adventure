@@ -91,10 +91,10 @@ The main reason I chose adventure games as the theme of this class is because it
 
 Let's break down this `if` statement:  
 ```python
-if lunchbox[‘sandwich’] == baloney:
-	print ‘My favorite!’
+if lunchbox['sandwich'] == baloney:
+	print 'My favorite!'
 else:
-	print ‘Oh well, not my favorite sandwich’
+	print 'Oh well, not my favorite sandwich'
 ```
   
 `if` is followed by a condition; that is, a question that evaluates or compares two (or more) things and has either a `True` or `False` answer. 
@@ -107,9 +107,10 @@ There are many examples of operators. Here are some others:
 ```python
 if 3 > 4
 ```
-(*"if three is greater than four"*, evaluates to `False`)  
+(*"if three is greater than four"*, evaluates to `False`)
+
 ```python
-if len(‘pumpkin’) >= 7
+if len('pumpkin') >= 7
 ```
 (*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
 
@@ -156,9 +157,9 @@ Your program will pause and wait for the user to enter something via the keyboar
 Here, I am assigning the user’s response to a variable, `their_sandwich`, so I can do something with it- for example, use it in an `if` statement:  
 ```python
 if their_sandwich == lunchbox['sandwich']:
-  print "Wow, we have the same favorite sandwich"
+	print "Wow, we have the same favorite sandwich"
 else:
-  print "Never heard of it"
+	print "Never heard of it"
  ```
 
 ## A little trickier, but important!
@@ -168,48 +169,58 @@ I think of them as a machine in a factory.
 Python has some functions built in. We briefly saw `len()`, for example.  
 
 You can (and should!) write your own functions, though!
+
 Here are the parts of a function:
-`def fruit_slicer(fruit):
-fruit = fruit + " slices"
-  	return fruit`
+```python
+def fruit_slicer(fruit):
+	fruit = fruit + " slices"
+  	return fruit
+```
 
 First, we declare that we are going to make a function by writing `def`  
 `fruit_slicer` is the name of the function  
 The parentheses are where we put a parameter, which is a placeholder for the real value we will eventually use. In this case, `fruit` is the parameter. The colon `:` is the end of the function heading. Any indented text after the colon will be inside the function: the body.
 
-We’re going to do a (silly) task to anything that comes inside the function- we’re going to add the word `“ slices”` to it. Again, the parameter `fruit` is just a placeholder for whatever gets fed in there.
+We’re going to do a (silly) task to anything that comes inside the function- we’re going to add the word `" slices"` to it. Again, the parameter `fruit` is just a placeholder for whatever gets fed in there.
 
 `return` spits the finished product out of the function.
 
 Now, we call the function by name, and put the thing we want sliced between the parentheses- the argument. So the string `‘apple’` is the argument this time:
-`print fruit_slicer(‘apple’)`
+```python
+print fruit_slicer('apple')
+```
 
 ### control statements
 Right now, your program is running from top to bottom until it runs out, and then it sits there until you run it again.
 If there’s anything computers are really good at, it’s doing stuff over and over really fast. So when you want to do something a lot of times, let the computer do the hard work by using a control statement to make a loop. 
 
 If I wanted to slice three apples, I could do:
+```python
 print fruit_slicer(‘apple’)
 print fruit_slicer(‘apple’)
 print fruit_slicer(‘apple’)
+```
 
 Or I could use a for loop
 
+```python
 for apples in range(3):
-    print fruit_slicer('apple')
+	print fruit_slicer('apple')
+```
 
-It begins with for, as in “For the longest time…”
-apples is just a placeholder, and the built-in function range lets use choose how many times the loop should go around (in this case, 3). So we’re saying “for as many things as there are in a range of three… do the task inside the loop”
+It begins with `for`  
+`apples` is just a placeholder, and the built-in function `range()` lets use choose how many times the loop should go around (in this case, `3`). So we’re saying *"for as many things as there are in a range of three… do the task inside the loop"*
 
-For loops get really handy when we’ve got a list of something and we want to do a task to every item in the list.
+`for` loops get really handy when we’ve got a list of something and we want to do a task to every item in the list.
 
-First I made a nice list of fruit.
+First I made a nice list of fruit, then I feed my variable `fruit_basket` into the `fruit_slicer` function:
+```python
 fruit_basket = ['apple', 'orange', 'peach', 'pear']
 
-Like previously, the word fruit in the for loop is just a placeholder that I gave a compelling name. fruit_basket is the name of that list variable I just made.
-So now my for loop reads “For as many fruit as there are in the variable fruit_basket, call fruit_slicer on each individual fruit, in order, until there are no more.”
-
 for fruit in fruit_basket:
-    print fruit_slicer(fruit)
+	print fruit_slicer(fruit)
+```
 
-The really tricky parts
+Like in the previous loop, the word `fruit` is just a placeholder that I gave a compelling name. `fruit_basket` is the name of that list variable I just made.
+
+Now my `for` loop reads *"For as many fruit as there are in the variable fruit_basket, call fruit_slicer on each individual fruit, in order, until there are no more."*
