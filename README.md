@@ -19,7 +19,17 @@ Python is a high-level dynamic programming language commonly used for teaching,
 but it is by no means only for teaching… Instagram is written in Python, and YouTube used to be
 I think it (and the community surrounding it) have a sort of friendly spirit. It is named after Monty Python’s Flying Circus, after all.
 
-## Vocabulary list:
+# Class materials
+- [The github repo you're looking at right now](https://github.com/3valley/code-your-own-adventure/)
+- A [trinket](https://trinket.io) account, for saving your work
+-- Python can be installed on any computer, but for this class we're going to use an entirely browser-based version, trinket.io
+### Lessions
+- [Lesson 1: CYOA Intro](https://trinket.io/python/dd5c840894)
+- [Lesson 2: Simple Adventure](https://trinket.io/python/e7a618150f)
+- [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
+
+# Terms
+## The basics
 ### Program
 A **program** is a set of instructions that performs a task when executed (or **run**) by a computer.  
 When using trinket.io, your program is in the left pane and the program’s output is on the right.
@@ -240,3 +250,5 @@ for fruit in fruit_basket:
 Like in the previous loop, the word `fruit` is just a placeholder that I gave a compelling name. `fruit_basket` is the name of that variable.
 
 Now my `for` loop reads *"For as many fruit as there are in the variable fruit_basket, call fruit_slicer on each individual fruit, in order, until there are no more."*
+
+# Modifying the Example Code
