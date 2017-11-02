@@ -1,3 +1,19 @@
+**Table of Contents**
+
+- [Code Your Own Adventure](#)
+	- [Vocabulary list:](#)
+		- [Program](#)
+		- [Syntax](#)
+		- [Comment](#)
+		- [Variable](#)
+		- [Data Types](#)
+		- [Conditional statements:](#)
+	- [Because it’s fun](#)
+		- [input](#)
+	- [A little trickier, but important!](#)
+		- [function](#)
+		- [control statements or loops](#)
+
 # Code Your Own Adventure
 Python is a high-level dynamic programming language commonly used for teaching, 
 but it is by no means only for teaching… Instagram is written in Python, and YouTube used to be
