@@ -29,7 +29,7 @@ I think it (and the community surrounding it) have a sort of friendly spirit. It
 - [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
 
 # Modifying the Example Code
-Open one of the lesson links, hit the Remix icon in the top right corner of the pane, 
+Open one of the lesson links, hit the Remix icon in the top right corner of the pane, create an account with an email and password, then hit the green Remix button again. Now a copy of the lesson should be saved to your account.
 
 # Lesson 1: Terms
 ## The basics
