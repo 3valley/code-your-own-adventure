@@ -28,7 +28,10 @@ I think it (and the community surrounding it) have a sort of friendly spirit. It
 - [Lesson 2: Simple Adventure](https://trinket.io/python/e7a618150f)
 - [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
 
-# Terms
+# Modifying the Example Code
+Open one of the lesson links, hit the Remix icon in the top right corner of the pane, 
+
+# Lesson 1: Terms
 ## The basics
 ### Program
 A **program** is a set of instructions that performs a task when executed (or **run**) by a computer.  
@@ -112,83 +115,6 @@ print lunchbox['sandwich']
 ``` 
 which would display `baloney`
 
-### Conditional statements:
-The main reason I chose adventure games as the theme of this class is because it gives you an excuse to use lots of **conditional statements**, also called an **`if` statement**, and `if` statements are fun to write.
-
-Let's break down this `if` statement:  
-```python
-if lunchbox['sandwich'] == baloney:
-	print 'My favorite!'
-else:
-	print 'Oh well, not my favorite sandwich'
-```
-  
-`if` is followed by a **condition**; that is, a question that **evaluates** or compares two (or more) things and has either a `True` or `False` answer. 
-
-The condition here is `lunchbox[‘sandwich’] == 'baloney'`, *"if the value paired with the key ‘sandwich’ in the dictionary ‘lunchbox’ is the same as 'baloney'"*
-
-The symbol in the middle is called the **operator**. The operator here is `==`, *is equal to*
-
-There are many operators and with them, options for writing conditions. Here are some others:  
-```python
-if 3 > 4
-```
-(*"if three is greater than four"*, evaluates to `False`)
-
-```python
-if len('pumpkin') >= 7
-```
-(*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
-
-After the condition, there’s a colon `:` to end the **header** of the statement.  
-Any indented text after the colon will be the **body** of the statement.
-
-The body is where you can add tasks that should only be performed if the condition is `True`
-The body of my `if` statement is:
-```python
-	print 'My favorite!'
-```
-This code will only run if the value of `sandwich` is equal to `baloney`. __Otherwise, it will be skipped__. 
-
-Things could end here, but I also have an `else` in this statement, with its own body where I can place a task. So I have two possible outcomes: one task for baloney, and a different task for every other sandwich.
-
-Here is the body of the `else` statement:  
-```python
-	print 'Oh well, not my favorite sandwich'
-```
-
-Your `if` statement can have additional, optional parts. For example, I could add an `elif` (short for *else if*) followed by another condition to my statement (with an additional task in the body of the `elif` statemet) to handle a second sandwich option, and then an `else` as a catchall for any other kind of sandwich (one that isn’t the same as baloney AND isn’t the same as chicken salad)
-
-```python
-if lunchbox['sandwich'] == ‘baloney’:
-	print 'My favorite!'
-elif lunchbox['sandwich'] == 'chicken salad':
-	print 'My second favorite!'
-else:
-	print 'Oh well, not any of my favorite sandwiches'
-```
-
-An `if` statement always starts with `if` 
-Optionally, you can add as many `elif`s as you like
-Optionally, you can add an `else` as a catchall for everything that wasn’t caught by `if` and/or `elif`
-
-## Because it’s fun
-### input
-You can use the built-in `input()` feature to get input from the user:   
-```python
-their_sandwich = input('What\'s your favorite sandwich?')
-```
-Your program will pause and wait for the user to enter something via the keyboard.
-
-Here, I am assigning the user’s response to a variable, `their_sandwich`, so I can do something with it- for example, use it in an `if` statement:  
-```python
-if their_sandwich == lunchbox['sandwich']:
-	print "Wow, we have the same favorite sandwich"
-else:
-	print "Never heard of it"
- ```
-
-## A little trickier, but important!
 ### function
 **Functions** are a little package of code that performs a task.  
 I think of them as a machine in a factory.   
@@ -251,4 +177,82 @@ Like in the previous loop, the word `fruit` is just a placeholder that I gave a 
 
 Now my `for` loop reads *"For as many fruit as there are in the variable fruit_basket, call fruit_slicer on each individual fruit, in order, until there are no more."*
 
-# Modifying the Example Code
+
+
+# Lesson 2: Inputs and if/else statements
+### input
+You can use the built-in `input()` feature to get input from the user:   
+```python
+their_sandwich = input('What\'s your favorite sandwich?')
+```
+Your program will pause and wait for the user to enter something via the keyboard.
+
+Here, I am assigning the user’s response to a variable, `their_sandwich`, so I can do something with it- for example, use it in an `if` statement:  
+```python
+if their_sandwich == lunchbox['sandwich']:
+	print "Wow, we have the same favorite sandwich"
+else:
+	print "Never heard of it"
+ ```
+ 
+ ### Conditional statements:
+The main reason I chose adventure games as the theme of this class is because it gives you an excuse to use lots of **conditional statements**, also called an **`if` statement**, and `if` statements are fun to write.
+
+Let's break down this `if` statement:  
+```python
+if lunchbox['sandwich'] == baloney:
+	print 'My favorite!'
+else:
+	print 'Oh well, not my favorite sandwich'
+```
+  
+`if` is followed by a **condition**; that is, a question that **evaluates** or compares two (or more) things and has either a `True` or `False` answer. 
+
+The condition here is `lunchbox[‘sandwich’] == 'baloney'`, *"if the value paired with the key ‘sandwich’ in the dictionary ‘lunchbox’ is the same as 'baloney'"*
+
+The symbol in the middle is called the **operator**. The operator here is `==`, *is equal to*
+
+There are many operators and with them, options for writing conditions. Here are some others:  
+```python
+if 3 > 4
+```
+(*"if three is greater than four"*, evaluates to `False`)
+
+```python
+if len('pumpkin') >= 7
+```
+(*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
+
+After the condition, there’s a colon `:` to end the **header** of the statement.  
+Any indented text after the colon will be the **body** of the statement.
+
+The body is where you can add tasks that should only be performed if the condition is `True`
+The body of my `if` statement is:
+```python
+	print 'My favorite!'
+```
+This code will only run if the value of `sandwich` is equal to `baloney`. __Otherwise, it will be skipped__. 
+
+Things could end here, but I also have an `else` in this statement, with its own body where I can place a task. So I have two possible outcomes: one task for baloney, and a different task for every other sandwich.
+
+Here is the body of the `else` statement:  
+```python
+	print 'Oh well, not my favorite sandwich'
+```
+
+Your `if` statement can have additional, optional parts. For example, I could add an `elif` (short for *else if*) followed by another condition to my statement (with an additional task in the body of the `elif` statemet) to handle a second sandwich option, and then an `else` as a catchall for any other kind of sandwich (one that isn’t the same as baloney AND isn’t the same as chicken salad)
+
+```python
+if lunchbox['sandwich'] == ‘baloney’:
+	print 'My favorite!'
+elif lunchbox['sandwich'] == 'chicken salad':
+	print 'My second favorite!'
+else:
+	print 'Oh well, not any of my favorite sandwiches'
+```
+
+An `if` statement always starts with `if` 
+Optionally, you can add as many `elif`s as you like
+Optionally, you can add an `else` as a catchall for everything that wasn’t caught by `if` and/or `elif`
+
+
