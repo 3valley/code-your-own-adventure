@@ -9,7 +9,9 @@ A program is a set of instructions that performs a task when executed (or run) b
 When using trinket.io, your program is in the left pane and the program’s output is on the right.
 
 Try typing this at the top of the left pane  
-`print 'hello world'`  
+```python
+print 'hello world'
+```
 then click the Run button ▶
 
 ### Syntax
@@ -21,90 +23,123 @@ Trinket.io has syntax highlighting, where the things you type will change color 
 Comments have no effect on the program, so you can use them to describe the code (and write notes to yourself). You can also comment out chunks of your program to test things and diagnose problems.
 
 Single-line comments start with a #  
-`# Single-line comment`
+```python
+# Single-line comment
+```
 
 Multiple-line comments are wrapped in triple quotes  
-`""" Multiline
-	comment """` 
-  
-You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> to insert a comment automatically
+```python
+""" Multiline
+	comment """
+```
+You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> to insert a single-line omment automatically
 
 ### Variable
 A variable is a placeholder (I like to think of it as a little container, like a Tupperware) for a value. The contents of the variable can vary as your program runs. Variables can have any name, as long as it starts with a letter or an underscore. No spaces allowed!
 
 When you create a variable, you also assign a value to it by adding an equals sign and then a value for it to hold.
-`tupperware = ‘green beans’`
+```python
+tupperware = 'green beans'
+```
 
 Values can be different data types, each with their own syntax.
 
 ### Data Types
 **Int:** A whole number (integer)  
-`coins = 3`
+```python
+coins = 3
+```
 
 **Float:** Number with a decimal point (floating point)  
-`temperature = 96.2`
+```python
+temperature = 96.2
+```
 
 **String:** Text, always needs quotation marks around it `'like this'` or `'like this'`  
-`greeting = “Welcome to Code Your Own Adventure”`
+```python
+greeting = "Welcome to Code Your Own Adventure"
+```
 
 **Boolean:** Holds only a true or false value. Must be written in caps, `True` or `False`  
-`is_eaten = True`
+```python
+is_eaten = True
+```
 
 **List:** Called an array in other languages. Multiple items contained in one variable, surrounded by brackets with commas in between items. This is a list of strings:  
-`backpack = [‘map’, ‘flashlight’] `
-
+```python
+backpack = ['map', 'flashlight']
+```
 Values in the list are indexed in the order you added them, so you can recall them by specifying the index.  
-`print backpack[1]` would display `flashlight`, because indexes start from 0, not 1
+`print backpack[1]` would display `flashlight`, because indexes start from `0`, not `1`
 
 **Dictionary:**
 Dictionaries are like lists, but instead of indexed values, they have key-value pairs. 
 
-In this dictionary, `‘sandwich’` is a key and `‘baloney’` is the value:  
-`Lunchbox = {‘sandwich’:’baloney’, ‘snack’:’apple’, ‘dessert’:’oreos’}`
+In this dictionary, the string `'sandwich'` is a key and the string `'baloney'` is the value: 
+```python
+Lunchbox = {'sandwich':'baloney', 'snack':'apple', 'dessert':'oreos'}
+```
 
 If I wanted to know what sandwich was in my lunchbox today, I could do:  
-`print lunchbox['sandwich']`, which would display `baloney`
+```python
+print lunchbox['sandwich']
+``` 
+which would display `baloney`
 
 ### Conditional statements:
 The main reason I chose adventure games as the theme of this class is because it gives you an excuse to use lots of conditional statements, also called an if statement, and if statements are fun to write.
 
 Let's break down this `if` statement:  
-`if lunchbox[‘sandwich’] == baloney:
+```python
+if lunchbox[‘sandwich’] == baloney:
 	print ‘My favorite!’
 else:
-	print ‘Oh well, not my favorite sandwich’`
+	print ‘Oh well, not my favorite sandwich’
+```
   
 `if` is followed by a condition; that is, a question that evaluates or compares two (or more) things and has either a `True` or `False` answer. 
 
-The condition here is `lunchbox[‘sandwich’] == ‘baloney’`, *"if the value paired with the key ‘sandwich’ in the dictionary ‘lunchbox’ is the same as 'baloney'"*
+The condition here is `lunchbox[‘sandwich’] == 'baloney'`, *"if the value paired with the key ‘sandwich’ in the dictionary ‘lunchbox’ is the same as 'baloney'"*
 
 The symbol in the middle is called the operator. The operator here is `==`, *is equal to*
 
 There are many examples of operators. Here are some others:  
-`if 3 > 4` *"if three is greater than four"*, evaluates to `False`)  
-`if len(‘pumpkin’) >= 7` (*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
+```python
+if 3 > 4
+```
+(*"if three is greater than four"*, evaluates to `False`)  
+```python
+if len(‘pumpkin’) >= 7
+```
+(*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
 
 After the condition, there’s a colon `:` to end the header of the statement.  
 Any indented text after the colon will be the body of the statement.
 
 The body is where you can add tasks that should only be performed if the condition is `True`
 The body of my `if` statement is:
-`print ‘My favorite!’`  
-This code will only run if the sandwich is baloney. Otherwise, it will be skipped. 
+```python
+print 'My favorite!'
+```
+This code will only run if the value of `sandwich` is equal to `baloney`. Otherwise, it will be skipped. 
 
 Things could end here, but I also have an `else` in this statement, with its own body where I can place a task. So I have two possible outcomes: one task for baloney, and a different task for every other sandwich.
 
 Here is the body of the `else` statement:  
-`print ‘Oh well, not my favorite sandwich’`
+```python
+print 'Oh well, not my favorite sandwich'
+```
 
 Your `if` statement can have additional, optional parts. For example, I could add an `elif` (short for *else if*) followed by another condition to my statement (with a third task in the body!) to handle a second sandwich option, and then an `else` as a catchall for any other kind of sandwich (one that isn’t the same as baloney AND isn’t the same as chicken salad)
 
-`if lunchbox[‘sandwich’] == ‘baloney’:
-	print ‘My favorite!’
-elif lunchbox[‘sandwich’] == ‘chicken salad’:
-	print ‘My second favorite!’
+```python
+if lunchbox['sandwich'] == ‘baloney’:
+	print 'My favorite!'
+elif lunchbox['sandwich'] == 'chicken salad':
+	print 'My second favorite!'
 else:
-	print ‘Oh well, not any of my favorite sandwiches’`
+	print 'Oh well, not any of my favorite sandwiches'
+```
 
 An `if` statement always starts with `if` 
 Optionally, you can add as many `elif`s as you like
@@ -113,13 +148,18 @@ Optionally, you can add an `else` as a catchall for everything that wasn’t cau
 ## Because it’s fun
 ### input
 You can use the built-in input() feature to get input from the user:   
-`their_sandwich = input('What\'s your favorite sandwich?')`
+```python
+their_sandwich = input('What\'s your favorite sandwich?')
+```
+Your program will pause and wait for the user to enter something via the keyboard.
 
 Here, I am assigning the user’s response to a variable, `their_sandwich`, so I can do something with it- for example, use it in an `if` statement:  
-`if their_sandwich == lunchbox['sandwich']:
+```python
+if their_sandwich == lunchbox['sandwich']:
   print "Wow, we have the same favorite sandwich"
 else:
-  print "Never heard of it"`
+  print "Never heard of it"
+ ```
 
 ## A little trickier, but important!
 ### function
