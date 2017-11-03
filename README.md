@@ -390,14 +390,14 @@ class superspy(name):
 
 ### Object
 ```python
-protaganist = superspy('Jason Bourne')
+protagonist = superspy('Jason Bourne')
 ```
 
 He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. 
 
 Since he is an instance of the superspy class, he has functions that belong to him, called **methods**, for being a cool spy (`karate` is a method, and so is `translate_to_russian`). Then, over the course of the movie, our *particular* superspy object learns about his fraught past and stuff, but none of that modifies the original superspy blueprint, the class.
 
-Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example. The class is superspies generally, and the object is the movie's `protaganist`, `protaganist.name` Jason Bourne, an **instance** of the superspy class.
+Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example. The class is superspies generally, and the object is the movie's `protoganist`, `protagonist.name` Jason Bourne, an **instance** of the superspy class.
 
 We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes. Depending on how you modify the code, you might have three instances of the same `Weapon` or `MapTile` child class. These objects form this copy of the game world.
 
