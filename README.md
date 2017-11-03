@@ -170,7 +170,12 @@ if 3 > 4
 ```python
 if len('pumpkin') >= 7
 ```
-(*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`)  
+(*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`) 
+
+If you've ever been unable to use your favorite password on a new website, you were probably a victim of a condition that looked something like this:
+```python
+if len(password) > 8 and has_numbers(password) and has_capital_letter(password):
+```
 
 After the condition, there’s a colon `:` to end the **header** of the statement.  
 Any indented text after the colon will be the **body** of the statement.
