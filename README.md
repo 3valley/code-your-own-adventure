@@ -1,19 +1,3 @@
-**Table of Contents**
-
-- [Code Your Own Adventure](#)
-	- [Vocabulary list:](#)
-		- [Program](#)
-		- [Syntax](#)
-		- [Comment](#)
-		- [Variable](#)
-		- [Data Types](#)
-		- [Conditional statements:](#)
-	- [Because it’s fun](#)
-		- [input](#)
-	- [A little trickier, but important!](#)
-		- [function](#)
-		- [control statements or loops](#)
-
 # Code Your Own Adventure
 ### Our mission today
 - To encounter (not necessarily memorize!) key programming terms!
@@ -271,5 +255,56 @@ Like in the previous loop, the word `fruit` is just a placeholder that I gave a 
 
 Now my `for` loop reads *"For as many fruit as there are in the variable fruit_basket, call fruit_slicer on each individual fruit, in order, until there are no more."*
 
+# Lession 2: Simple Adventure
 
+A new program, with new things to notice:
+- We now have two files that you can switch between using the tabs at the top of the program pane
+- The code begins with an `import` statement, which lets us use code from the second file in the first. This is a nice way to keep parts of your program organized, so everything isn't in one huge file.
+```python
+	import game
+```
+- Some things should look a bit familiar. You might recognize a variable `player_name`, the`input()` function, and the `print` statements, 
+
+## Assignments
+### Examine the code
+- Hit run and play through the game.
+- Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following
+-- `If/else` statements
+-- An **is equal to** `==` condition in an `if` statement
+-- User-defined functions that begin with `def`
+-- Lines in the `adventure()` function that **call** those user-defined functions
+
+### Modify the code
+When ready, start changing things up!
+- Define a new function on line 40 with a print statement in the body
+```python
+def my_first_function():
+	print 'example message'
+```
+- Call your new function on line 29
+```python
+my_first_function()
+```
+- Make sure to run the program and play through to test it.
+- Add another new function below your first one
+```python
+my_second_function():
+	print 'example message'
+```
+- Add a new variable to your first function and assign the user input to it
+```python
+def my_first_function():
+	next_move = input('Choose right or left')
+	print 'example message'
+```
+- In your first function, add an if/else statement that checks the user input and have either 
+the if, elif, or else statement call the second function
+```python
+def my_first_function():
+	next_move = input('Choose right or left')
+	if next_move == 'right':
+		my_second_function'
+	elif next_move == 'left':
+		'You died!'
+```
 
