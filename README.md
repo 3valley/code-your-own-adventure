@@ -7,7 +7,7 @@
 ### Why Python?
 Python is a **high-level, dynamic** programming language commonly used for teaching, but it is by no means *only* for teaching *(Instagram is written in Python, and YouTube used to be)*, so you're not limited!
 
-Also, thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials are just a little more fun.
+Also, I thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials are just a little more fun.
 
 # Class materials
 ### Lessons
@@ -100,6 +100,8 @@ greeting = "Welcome to Code Your Own Adventure"
 ```python
 is_eaten = True
 ```
+
+***Take a moment here and add your own variable to the program.***
 
 **List:** Called an array in other languages. Multiple items contained in one variable, surrounded by brackets with commas in between items. This is a list of strings:  
 ```python
@@ -366,7 +368,7 @@ It's a blueprint for a player! Let me take a very brief detour into metaphor.
 Hopefully, you all have seen *The Bourne Identity*?
 
 ```python
-class supersoldier(name):
+class superspy(name):
 	def __init__(self, name):
 		self.name = name
 		self.inventory = [gun()]
@@ -383,14 +385,18 @@ class supersoldier(name):
 
 ### Object
 ```python
-protaganist = supersoldier('Jason Bourne')
+protaganist = superspy('Jason Bourne')
 ```
 
-He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. Then, over the course of the movie, our *particular* supersoldier object learns about his fraught past and stuff, but none of that modifies the original supersoldier blueprint, the class.
+He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. 
 
-Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example, with the class being supersoldiers generally, and the object being Jason Bourne, an **instance** of the supersoldier class.
+Since he is an instance of the superspy class, he has functions that belong to him, called **methods**, for being a cool spy (`karate` is a method, and so is `translate_to_russian`). Then, over the course of the movie, our *particular* superspy object learns about his fraught past and stuff, but none of that modifies the original superspy blueprint, the class.
 
-We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes, and that forms this copy of the game world.
+Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example. The class is superspies generally, and the object is the movie's `protaganist`, `protaganist.name` Jason Bourne, an **instance** of the superspy class.
+
+We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes. Depending on how you modify the code, you might have three instances of the same `Weapon` or `MapTile` child class. These objects form this copy of the game world.
+
+There is much more reading you can do on **classes**, **instantiating/instances**, and **objects**. This is just your first (maybe) exposure to the terminology.
 	
 ## Your goals:
 ### Examine the code
