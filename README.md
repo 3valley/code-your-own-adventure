@@ -435,7 +435,7 @@ There is much more reading you can do on **classes**, **instantiating/instances*
 - Head right back to <a href="https://trinket.io">trinket.io</a> and look at the examples automatically added to your My Trinkets page, or try the challenges at <a href="https://hourofpython.com/">hourofpython.com</a>
 - If you are mad that your game does not have graphics, check out <a href="http://programarcadegames.com/?chapter=example_code">programarcadegames.com</a>
 - <a href="https://www.codecademy.com/learn/learn-python">Learn Python at Codecademy</a> I like their Javascript tutorials too. And I mean I didn't finish the Ruby one but it seems cool too. 
-<a href="https://medium.freecodecamp.org/what-programming-language-should-i-learn-first-%CA%87d%C4%B1%C9%B9%C9%94s%C9%90%CA%8C%C9%90%C9%BE-%C9%B9%C7%9D%CA%8Dsu%C9%90-19a33b0a467d">Which programming language should you learn first? ʇdıɹɔsɐʌɐɾ :ɹǝʍsuɐ</a> An article that argues I taught you the wrong programming language and has a bunch of good information.
+- <a href="https://medium.freecodecamp.org/what-programming-language-should-i-learn-first-%CA%87d%C4%B1%C9%B9%C9%94s%C9%90%CA%8C%C9%90%C9%BE-%C9%B9%C7%9D%CA%8Dsu%C9%90-19a33b0a467d">Which programming language should you learn first? ʇdıɹɔsɐʌɐɾ :ɹǝʍsuɐ</a> An article that argues I taught you the wrong programming language and has a bunch of good information.
 - Also, be on the lookout for our next Arduino class at the library
 
 ### Some things that *I* learned from:
