@@ -392,10 +392,10 @@ We're going to leave it there. In short, this example code has a whole bunch of 
 ### Add class names to the map
 [Here's the spreadsheet I used to make my game map](https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing). The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commans that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program.
 
-**How to use:**  
+**How to use:**
+<img src="http://estesvalleylibrary.org/github/google-sheets.jpg" width="300px">
 - Open the spreadsheet
 - Add the names of your tile classes to this spreadsheet in a fun pattern.
-<img src="http://estesvalleylibrary.org/github/google-sheets.jpg" width="300px">
 - If you would like to add an enemy and/or object onto that tile, add them in the order `TileName|ItemName|EnemyName`, seperated by a pipe character `|`. If you would like a tile with an item but no enemy, do `TileName|ItemName|None`, and for an enemy but no item, `TileName|None|EnemyName`
 - File > Download as > .csv
 - Open the .csv file in Notepad (or TextEdit, on a Mac)
