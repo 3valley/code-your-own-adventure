@@ -395,9 +395,9 @@ We're going to leave it there. In short, this example code has a whole bunch of 
 **How to use:**  
 - Open the spreadsheet
 - Add the names of your tile classes to this spreadsheet in a fun pattern.
-![Alt text](http://estesvalleylibrary.org/github/google-sheets.jpg "Optional title")
+<img src="http://estesvalleylibrary.org/github/google-sheets.jpg" width="300px">
 - If you would like to add an enemy and/or object onto that tile, add them in the order `TileName|ItemName|EnemyName`, seperated by a pipe character `|`. If you would like a tile with an item but no enemy, do `TileName|ItemName|None`, and for an enemy but no item, `TileName|None|EnemyName`
 - File > Download as > .csv
 - Open the .csv file in Notepad (or TextEdit, on a Mac)
 - Copy-paste the output into map.txt
-![Alt text](http://estesvalleylibrary.org/github/maptxt.jpg "Optional title")
+<img src="http://estesvalleylibrary.org/github/maptxt.jpg" width="300px">
