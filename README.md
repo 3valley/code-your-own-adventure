@@ -138,7 +138,7 @@ The main reason I chose adventure games as the theme of this class is because it
 
 Let's break down this `if` statement:  
 ```python
-if lunchbox['sandwich'] == baloney:
+if lunchbox['sandwich'] == 'baloney':
 	print 'My favorite!'
 else:
 	print 'Oh well, not my favorite sandwich'
@@ -207,7 +207,7 @@ def fruit_slicer(fruit):
   	return fruit
 ```
 
-First, we **declare** that we are going to make, or **define**, a function by writing `def`  
+First, start, or **define**, a function by writing `def`  
 `fruit_slicer` is the name of the function  
 The parentheses are where we put a **parameter**, which is a placeholder for the real value we will eventually use. In this case, `fruit` is the parameter. The colon `:` is the end of the function heading. Any indented text after the colon will be inside the body of the function.
 
@@ -269,10 +269,10 @@ A new program, with new things to notice:
 ### Examine the code
 - Hit run and play through the game.
 - Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following
--- `If/else` statements
--- An **is equal to** `==` condition in an `if` statement
--- User-defined functions that begin with `def`
--- Lines in the `adventure()` function that **call** those user-defined functions
+    `If/else` statements
+    An **is equal to** `==` condition in an `if` statement
+    User-defined functions that begin with `def`
+    Lines in the `adventure()` function that **call** those user-defined functions
 
 ### Modify the code
 When ready, start changing things up!
@@ -304,9 +304,10 @@ def my_first_function():
 	next_move = input('Choose right or left')
 	if next_move == 'right':
 		my_second_function()
-	elif next_move == 'left':
-		'You were eaten by a second, larger dragon'
-	else
-		'You didn't choose right or left, and as a result, you fell off a cliff'
+	elif:
+		next_move == 'left':
+		print 'You were eaten by a second, larger dragon'
+	else:
+		print 'You didn't choose right or left, and as a result, you fell off a cliff'
 ```
-
+- Run the program to test
