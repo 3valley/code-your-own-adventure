@@ -352,12 +352,12 @@ player_name =  input("What's your name? >")
 ```
 But in a *real* (for some level of real) videogame, there are way more important player variables than just their name. They have an amount of health they can use before they die, an inventory, and abilities like moving and fighting. Then, as they walk around through rooms (rooms are *things* too!) they encounter more *things* that have qualities of their own! Weapons! Food on the ground! Enemies!
 
-We could sprinkle variables like `bigspider_1_health = 10` all over the code if we wanted and it would probably work up to a point, but it's going to get complicated fast, so we do ourselves a favor and make classes for all the things we might need.
+We could sprinkle variables like `bigspider_1_health = 10` all over the code if we wanted and it would probably work up to a point, but it's going to get complicated fast, so we do ourselves a favor and make **classes** for all the kinds of things we might need.
 
 ### Class
-Tutorials usually describe classes as something like a recipe, or a blueprint. You can't eat a recipe, or live inside a blueprint, but once you use a class to make an **instance** of an object, you can eat the resulting cake, or live in the resulting building.
+Tutorials usually describe classes as something like a recipe, or a blueprint. You can't eat a recipe, or live inside a blueprint, but once you use a **class** to make an **instance** of an **object**, you can eat the resulting cake, or live in the resulting building.
 
-Open <kbd>player.py</kbd> and take a look at the Player class.
+Switch to the <kbd>player.py</kbd> and take a look at the Player class.
 ```python
 class Player():
     def __init__(self):
@@ -395,11 +395,11 @@ protagonist = superspy('Jason Bourne')
 
 He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. 
 
-Since he is an instance of the superspy class, he has functions that belong to him, called **methods**, for being a cool spy (`karate` is a method, and so is `translate_to_russian`). Then, over the course of the movie, our *particular* superspy object learns about his fraught past and stuff, but none of that modifies the original superspy blueprint, the class.
+Since he (the `protagonist` **object)** is an **instance** of the superspy **class**, he has functions that __belong to him__, called **methods**, for being a cool spy (`karate` is a method, and so is `translate_to_russian`). Then, over the course of the movie, our *particular* superspy object learns about his fraught past and stuff, but none of that modifies the original superspy blueprint, the class.
 
 Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example. The class is superspies generally, and the object is the movie's `protoganist`, `protagonist.name` Jason Bourne, an **instance** of the superspy class.
 
-We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes. Depending on how you modify the code, you might have three instances of the same `Weapon` or `MapTile` child class. These objects form this copy of the game world.
+We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes. Depending on how you modify the code, you might have three objects that are all instances of the same `Weapon` or `MapTile` child class. These objects form this copy of the game world.
 
 There is much more reading you can do on **classes**, **instantiating/instances**, and **objects**. This is just your first (maybe) exposure to the terminology.
 	
