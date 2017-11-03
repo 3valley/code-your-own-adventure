@@ -388,9 +388,9 @@ protaganist = supersoldier('Jason Bourne')
 
 He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. Then, over the course of the movie, our *particular* supersoldier object learns about his fraught past and stuff, but none of that modifies the original supersoldier blueprint, the class.
 
-Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example, with the class being supersoldiers generally, and the object being Jason Bourne, this particular *instance* of the supersoldier class.
+Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example, with the class being supersoldiers generally, and the object being Jason Bourne, an **instance** of the supersoldier class.
 
-We're going to leave it there. In short, this example code has a whole bunch of classes that you can modify. When you run the code, a bunch of objects are being created from those classes, and that forms this copy of the game world.
+We're going to leave it there. In short, this example code has a LOT of classes that you can modify. When you run the code, a bunch of objects are being created from those classes, and that forms this copy of the game world.
 	
 ## Your goals:
 ### Examine the code
