@@ -430,3 +430,16 @@ There is much more reading you can do on **classes**, **instantiating/instances*
 - Copy-paste the output into map.txt
 
 <img src="http://estesvalleylibrary.org/github/maptxt.png" width="700px">
+
+# More resources
+- <a href="https://www.codecademy.com/learn/learn-python">Learn Python at Codecademy</a> I like their Javascript tutorials too. And I mean I didn't finish the Ruby one but it seems cool too. 
+<a href="https://medium.freecodecamp.org/what-programming-language-should-i-learn-first-%CA%87d%C4%B1%C9%B9%C9%94s%C9%90%CA%8C%C9%90%C9%BE-%C9%B9%C7%9D%CA%8Dsu%C9%90-19a33b0a467d">Which programming language should you learn first? ʇdıɹɔsɐʌɐɾ :ɹǝʍsuɐ</a> A great article that argues I taught you the wrong programming language and has a bunch of good information.
+- Also, be on the lookout for our next Arduino class at the library
+
+### Some things that *I* learned from:
+- It's way too expensive because it's a textbook, but it's my FAVORITE textbook: <a href="https://www.amazon.com/Starting-Out-Programming-Logic-Design-ebook/dp/B00XIH44RM">Starting Out With Programming Logic and Design, by Tony Gaddis</a>
+- I really like the books "HTML & CSS" and "Javascript & Jquery" by Jon Duckett, and good news: we have them at the library! <a href="https://catalog.estesvalleylibrary.org:8080/#section=search&term=jon duckett&page=0&sortKey=Relevancy&db=ls2pac&branchFilters=["1","2"]&facetFilters=[]">See them in the library catalog</a>
+- <a href="https://www.sparkfun.com/products/13930">Sparkfun Tinker Kit</a> Learn code and electronics at the same time 
+- <a href="https://themeshaper.com/2012/10/22/the-themeshaper-wordpress-theme-tutorial-2nd-edition/">Wordpress Theme Tutorial</a> While specific to one application, this tutorial series taught me more about PHP than anything else.
+
+
