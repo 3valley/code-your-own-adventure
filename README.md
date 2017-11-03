@@ -189,9 +189,9 @@ else:
 	print 'Oh well, not any of my favorite sandwiches'
 ```
 
-An `if` statement always starts with `if` 
-Optionally, you can add as many `elif`s as you like
-Optionally, you can add an `else` as a catchall for everything that wasn’t caught by `if` and/or `elif`
+An `if` statement always starts with `if`  
+Optionally, you can add as many `elif`s as you like  
+Optionally, you can add an `else` as a catchall for everything that wasn’t caught by `if` and/or `elif`  
 
 ### function
 **Functions** are a little package of code that performs a task.  
