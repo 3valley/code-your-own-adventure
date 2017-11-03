@@ -265,7 +265,7 @@ A new program, with new things to notice:
 ```
 - Some things should look a bit familiar. You might recognize a variable `player_name`, the`input()` function, and the `print` statements, 
 
-## Assignments
+## Your goals:
 ### Examine the code
 - Hit run and play through the game.
 - Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following:  
@@ -311,3 +311,89 @@ def my_first_function():
 		print 'You didn't choose right or left, and as a result, you fell off a cliff'
 ```
 - Run the program to test
+
+# Lession 3: Code Your Own Adventure
+For this lesson, we are going to dip a tiny toe into the wild frontier of object-oriented programming.  
+This is **not** commonly considered a beginner-level topic, but I want to tell you about it for two reasons:
+- I found this amazing tutorial that I want to share with you, and it's written in object oriented style
+- If you keep going with Python and programming, I want you to continue borrowing and modifying people's example code and weird tutorials, and some of them are going to be object oriented. 
+
+**You don't need to fully understand these concepts today (I don't know if I do either), I am just going to lay them gently onto you**
+*Disclaimer: This is not a great example of object-oriented programming. I took a really nice tutorial that was done correctly and basically picked it apart until I thought I could explain it, and a result some things are simplified to the point that they're not really done ...the right way... anymore. Basically, I took a nice ball of yarn, unwound it, and wound it back up into sort of a fuzzy wad. But it runs!*
+
+## Objects and classes
+In object-oriented programming, all *things* are objects.
+
+In lesson 2, we had a single variable to hold 1 piece of information about the player:
+```python
+player_name =  input("What's your name? >")
+```
+But in a *real* (for some level of real) videogame, there are way more important player variables than just their name. They have an amount of health they can use before they die, an inventory, and abilities like moving and fighting. Then, as they walk around through rooms (rooms are *things* too!) they encounter more *things* that have qualities of their own! Weapons! Food on the ground! Enemies!
+
+We could sprinkle variables like `bigspider_1_health = 10` all over the code if we wanted and it would probably work up to a point, but it's going to get complicated fast, so we do ourselves a favor and make classes for all the things we might need.
+
+### Class
+Tutorials usually describe classes as something like a recipe, or a blueprint. You can't eat a recipe, or live inside a blueprint, but once you use a class to make an **instance** of an object, you can eat the resulting cake, or live in the resulting building.
+
+Open <kbd>player.py</kbd> and take a look at the Player class.
+```python
+class Player():
+    def __init__(self):
+        self.inventory = [world.WoodenSword()]
+        self.hp = 100
+        self.equipped_weapon = None
+        self.location_x, self.location_y = world.starting_position
+        self.alive = True
+	### there's a lot more below this
+```
+
+It's a blueprint for a player! Let me take a very brief detour into metaphor.  
+Hopefully, you all have seen *The Bourne Identity*?
+
+```class supersoldier(name):
+	def __init__(self, name):
+		self.name = name
+		self.inventory = [gun()]
+		
+	def karate(self, enemy):
+		###
+		##
+	
+	def translate_to_russian(word):
+		###
+		##
+		return word_russian
+```
+
+### Object
+```python
+protaganist = supersoldier('Jason Bourne')
+```
+
+He was trained to do all this crazy spy stuff in a secret lab, and then his memory was wiped and he starts the movie as himself. He has no idea what's going on but he already has a gun and a Swiss bank account and knows how to fight and speak a bunch of languages. Then, over the course of the movie, our *particular* supersoldier object learns about his fraught past and stuff, but none of that modifies the original supersoldier blueprint, the class.
+
+Anyway, that's how I think of the `Player()` class and the `player = Player()` object in this code example, with the class being supersoldiers generally, and the object being Jason Bourne, this particular *instance* of the supersoldier class.
+
+We're going to leave it there. In short, this example code has a whole bunch of classes that you can modify. When you run the code, a bunch of objects are being created from those classes, and that forms this copy of the game world.
+	
+## Your goals:
+### Examine the code
+- Hit run and play through the game.
+- Examine all four tabs. Does anything look familiar? There's some reading to do, since I put comments everywhere.
+
+### Add classes
+- In <kbd>world.py</kbd>, modify the tile **child class** named `YourExampleTile` that starts on line 56
+- Hit run to check for errors!
+- Modify the enemy child class named `ExampleEnemy` that starts on line 131
+- Hit run to check for errors!
+- Modify the weapon child class named `ExampleWeapon` that starts on line 166
+- Hit run to check for errors!
+
+### Add class names to the map
+[Here's the spreadsheet I used to make my game map](https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing)  
+**How to use:**  
+- Add the names of your tile classes to this spreadsheet in a fun pattern.
+- If you would like to add an enemy and/or object onto that tile, add them in the order `TileName|ItemName|EnemyName`, seperated by a pipe character `|`. If you would like a tile with an item but no enemy, do `TileName|ItemName|None`, and for an enemy but no item, `TileName|None|EnemyName`
+- File > Download as > .csv
+- Open the .csv file in Notepad (or TextEdit, on a Mac)
+- Copy-paste the output into map.txt
