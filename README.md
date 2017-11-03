@@ -417,7 +417,7 @@ There is much more reading you can do on **classes**, **instantiating/instances*
 - Hit run to check for errors!
 
 ### Add your new tile, weapon, and enemy to the map
-- <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">Here's the spreadsheet I used to make my game map</a>. The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commans that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program.
+- <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">Here's the spreadsheet I used to make my game map</a>. The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commas that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program. You can also edit map.txt directly, either after setting up the map in the spreadsheet, or instead.
 
 **How to use:**
 <p><img src="http://estesvalleylibrary.org/github/google-sheets.png" width="700px"></p>
