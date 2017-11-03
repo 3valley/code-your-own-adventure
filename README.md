@@ -26,7 +26,7 @@ Python is a **high-level, dynamic** programming language commonly used for teach
 Also, as the slide said, I thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials tend to be a little more fun. If you decide to continue pursuing programming, compare the Stackoverflow responses to Python questions versus, say, Javascript and you'll see what I mean.
 
 # Class materials
-### Lessions
+### Lessons
 - [Lesson 1: CYOA Intro](https://trinket.io/python/dd5c840894)
 - [Lesson 2: Simple Adventure](https://trinket.io/python/e7a618150f)
 - [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
@@ -53,7 +53,7 @@ Nothing is worse than getting an inscrutable error and not knowing which thing y
 A **program** is a set of instructions that performs a task when executed (or **run**) by a computer.  
 When using trinket.io, your program is in the left pane and the program’s output is on the right.
 
-Try typing this at the top of the left pane  
+With Lesson 1 open in trinket.io, try typing this at the top of the left pane  
 ```python
 print 'hello world'
 ```
@@ -62,7 +62,9 @@ then hit run ▶
 ### Syntax
 Like a human language, there are grammar and punctuation rules you must follow (although humans don’t usually grab you in the middle of a sentence, yell ERROR and refuse to let you continue talking until you use grammar correctly)
 
-Trinket.io (and a lot of other editors you'll encounter!) has **syntax highlighting**, where the things you type will change color based on what part of the code they represent. This can be useful for catching errors. (For example, a string without quote marks will be black instead of red)
+Trinket.io (and a lot of other editors you'll encounter!) has **syntax highlighting**, where the things you type will change color based on what part of the code they represent. This can be useful for catching errors. (For example, a word without quote marks will be black like a variable, instead of red like a string)
+
+This page also uses Python syntax highlighting, but to keep you guessing, it's a totally different color scheme. My apologies.
 
 ### Comment
 **Comments** have no effect on the program, so you can use them to describe the code (and write notes to yourself). You can also **comment out** chunks of your program by placing comments in front of existing code. This is useful for testing things and diagnosing problems.
@@ -77,10 +79,10 @@ Multiple-line comments are wrapped in triple quotes
 """ Multiline
 	comment """
 ```
-You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> to insert a single-line omment automatically
+You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> to insert a single-line comment automatically
 
-### Variable
-A **variable** is a placeholder (I like to think of it as a little container, like a Tupperware) for a value. The contents of the variable can __vary__ as your program runs. Variables can have any name, as long as it starts with a letter or an underscore. No spaces allowed!
+### Variables and their values
+A **variable** is a placeholder (I like to think of it as a little container, like a Tupperware) for a **value**. The value of the variable can __vary__ as your program runs. Variables can have any name, as long as it starts with a letter or an underscore. No spaces allowed!
 
 When you create a variable, you also **assign** a **value** to it by adding an equals sign `=` and then a value.
 ```python
@@ -90,12 +92,12 @@ tupperware = 'green beans'
 Values can be different **data types**, each with their own syntax.
 
 ### Data Types
-**Int:** A whole number (__int__ eger)  
+**Int:** A whole number (*int*eger)  
 ```python
 coins = 3
 ```
 
-**Float:** Number with a decimal point (__float___ ing point)  
+**Float:** Number with a decimal point (*float*ing point)  
 ```python
 temperature = 96.2
 ```
