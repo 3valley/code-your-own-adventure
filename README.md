@@ -297,8 +297,8 @@ def my_first_function():
 	next_move = input('Choose right or left')
 	print 'example message'
 ```
-- In your first function, add an if/else statement that checks the user input and have either 
-the if, elif, or else statement call the second function
+- In your first function, add an `if`/`else` statement that checks the user input and have either 
+the `if`, `elif`, or `else` statement call the second function
 ```python
 def my_first_function():
 	next_move = input('Choose right or left')
