@@ -303,8 +303,10 @@ the if, elif, or else statement call the second function
 def my_first_function():
 	next_move = input('Choose right or left')
 	if next_move == 'right':
-		my_second_function'
+		my_second_function()
 	elif next_move == 'left':
-		'You died!'
+		'You were eaten by a second, larger dragon'
+	else
+		'You didn't choose right or left, and as a result, you fell off a cliff'
 ```
 
