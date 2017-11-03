@@ -15,33 +15,40 @@
 		- [control statements or loops](#)
 
 # Code Your Own Adventure
-Python is a high-level dynamic programming language commonly used for teaching, 
-but it is by no means only for teaching… Instagram is written in Python, and YouTube used to be
-I think it (and the community surrounding it) have a sort of friendly spirit. It is named after Monty Python’s Flying Circus, after all.
+### Our mission today
+- To encounter (not necessarily memorize!) key programming terms!
+- To write your very own programs!
+- To creatively modify example code to your desire and the best of your ability!
+
+### Why Python?
+Python is a **high-level, dynamic** programming language commonly used for teaching, but it is by no means *only* for teaching… *(Instagram is written in Python, and YouTube used to be)*, so you're not limited!
+
+Also, as the slide said, I thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials tend to be a little more fun. If you decide to continue pursuing programming, compare the Stackoverflow responses to Python questions versus, say, Javascript and you'll see what I mean.
 
 # Class materials
-- [The github repo you're looking at right now](https://github.com/3valley/code-your-own-adventure/)
-- A [trinket](https://trinket.io) account, for saving your work
--- Python can be installed on any computer, but for this class we're going to use an entirely browser-based version, trinket.io
 ### Lessions
 - [Lesson 1: CYOA Intro](https://trinket.io/python/dd5c840894)
 - [Lesson 2: Simple Adventure](https://trinket.io/python/e7a618150f)
 - [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
 
+### Other materials
+- [The github repo you're looking at right now](https://github.com/3valley/code-your-own-adventure/)
+- A [trinket](https://trinket.io) account, for saving your work
+-- Python can be installed and Python programs run on your computer, but for this class we're going to use an entirely browser-based version, trinket.io
+
 # Modifying the Example Code
 Open one of the lesson links, hit the Remix icon in the top right corner of the pane, create an account with an email and password, then hit the green Remix button again. Now a copy of the lesson should be saved to your account.
 
-This copy belongs to you! I release it to you as open source software under CC0.
-
+This copy belongs to you! I release it to you as open source software under CC0. (The portions of lesson 3 credited to Phillip Johnson are under the MIT license). Please use it and change it as you like.
 
 ## *Important!*
-**Whenever you change something- even something small- hit run ▶!**  
-Even if you didn't change anything- any time you pause, hit run ▶!  
+**Whenever you change something- even something small- hit run ▶**  
+Even if you didn't change anything- any time you pause, hit run ▶ 
 Nothing is worse than getting an inscrutable error and not knowing which thing you changed is causing it!  
-**Whenever you change something- even something small- hit run ▶!**  
+**Whenever you change something- even something small- hit run ▶**  
 
-# Lesson 1: Terms
-## The basics
+# Lesson 1: The vocabulary and the basics
+
 ### Program
 A **program** is a set of instructions that performs a task when executed (or **run**) by a computer.  
 When using trinket.io, your program is in the left pane and the program’s output is on the right.
@@ -50,12 +57,12 @@ Try typing this at the top of the left pane
 ```python
 print 'hello world'
 ```
-then click the Run button ▶
+then hit run ▶
 
 ### Syntax
 Like a human language, there are grammar and punctuation rules you must follow (although humans don’t usually grab you in the middle of a sentence, yell ERROR and refuse to let you continue talking until you use grammar correctly)
 
-Trinket.io has **syntax highlighting**, where the things you type will change color based on what part of the code they represent. This can be useful for catching errors. (For example, a string without quote marks will be black instead of red)
+Trinket.io (and a lot of other editors you'll encounter!) has **syntax highlighting**, where the things you type will change color based on what part of the code they represent. This can be useful for catching errors. (For example, a string without quote marks will be black instead of red)
 
 ### Comment
 **Comments** have no effect on the program, so you can use them to describe the code (and write notes to yourself). You can also **comment out** chunks of your program by placing comments in front of existing code. This is useful for testing things and diagnosing problems.
