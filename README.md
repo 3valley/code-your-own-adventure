@@ -11,14 +11,15 @@ Also, as the slide said, I thought it was cool and nice. My theory is, because o
 
 # Class materials
 ### Lessons
-- [Lesson 1: CYOA Intro](https://trinket.io/python/dd5c840894)
-- [Lesson 2: Simple Adventure](https://trinket.io/python/e7a618150f)
-- [Lesson 3: Code Your Own Adventure](https://trinket.io/python/39024e9d81)
+- <a href="https://trinket.io/python/dd5c840894" target="_blank">Lesson 1: CYOA Intro</a>
+- <a href="https://trinket.io/python/e7a618150f" target="_blank">Lesson 2: Simple Adventure</a>
+- <a href="https://trinket.io/python/39024e9d81" target="_blank">Lesson 3: Code Your Own Adventure</a>
 
 ### Other materials
-- [The github repo you're looking at right now](https://github.com/3valley/code-your-own-adventure/)
-- A [trinket](https://trinket.io) account, for saving your work
--- Python can be installed and Python programs run on your computer, but for this class we're going to use an entirely browser-based version, trinket.io
+- <a href="https://github.com/3valley/code-your-own-adventure/" target="_blank">the github repo you're looking at now</a>
+- <a href="https://trinket.io" target="_blank">A trinket.io account, for saving your work</a>
+    Python can be installed and Python programs run on your computer, but for this class we're going to use an entirely browser-based version, trinket.io
+- <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">This map spreadsheet, for lesson 3</a>
 
 # Modifying the Example Code
 Open one of the lesson links, hit the Remix icon in the top right corner of the pane, create an account with an email and password, then hit the green Remix button again. Now a copy of the lesson should be saved to your account.
@@ -390,12 +391,12 @@ We're going to leave it there. In short, this example code has a whole bunch of 
 - Hit run to check for errors!
 
 ### Add class names to the map
-[Here's the spreadsheet I used to make my game map](https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing). The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commans that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program.
+- <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">Here's the spreadsheet I used to make my game map</a>. The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commans that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program.
 
 **How to use:**
 <p><img src="http://estesvalleylibrary.org/github/google-sheets.png" width="700px"></p>
 
-- [Open the spreadsheet](https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing)
+- <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">Open the spreadsheet</a>
 - Add the names of your tile classes to this spreadsheet in a fun pattern.
 - If you would like to add an enemy and/or object onto that tile, add them in the order `TileName|ItemName|EnemyName`, seperated by a pipe character `|`. If you would like a tile with an item but no enemy, do `TileName|ItemName|None`, and for an enemy but no item, `TileName|None|EnemyName`
 - File > Download as > .csv
