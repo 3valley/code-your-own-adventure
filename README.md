@@ -31,6 +31,15 @@ I think it (and the community surrounding it) have a sort of friendly spirit. It
 # Modifying the Example Code
 Open one of the lesson links, hit the Remix icon in the top right corner of the pane, create an account with an email and password, then hit the green Remix button again. Now a copy of the lesson should be saved to your account.
 
+This copy belongs to you! I release it to you as open source software under CC0.
+
+
+## *Important!*
+**Whenever you change something- even something small- hit run ▶!**  
+Even if you didn't change anything- any time you pause, hit run ▶!  
+Nothing is worse than getting an inscrutable error and not knowing which thing you changed is causing it!  
+**Whenever you change something- even something small- hit run ▶!**  
+
 # Lesson 1: Terms
 ## The basics
 ### Program
