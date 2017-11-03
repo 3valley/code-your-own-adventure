@@ -438,8 +438,8 @@ There is much more reading you can do on **classes**, **instantiating/instances*
 
 ### Some things that *I* learned from:
 - It's way too expensive because it's a textbook, but it's my FAVORITE textbook: <a href="https://www.amazon.com/Starting-Out-Programming-Logic-Design-ebook/dp/B00XIH44RM">Starting Out With Programming Logic and Design, by Tony Gaddis</a>
-- I really like the books "HTML & CSS" and "Javascript & Jquery" by Jon Duckett, and good news: we have them at the library! <a href="https://catalog.estesvalleylibrary.org:8080/#section=search&term=jon duckett">See them in the library catalog</a>
-- <a href="https://www.sparkfun.com/products/13930">Sparkfun Tinker Kit</a> Learn code and electronics at the same time 
+- I really like the books *HTML & CSS* and *Javascript & Jquery* by Jon Duckett, and good news: we have them at the library! <a href="https://catalog.estesvalleylibrary.org:8080/#section=search&term=jon duckett">See them in the library catalog</a>
+- <a href="https://www.sparkfun.com/products/13930">Sparkfun Tinker Kit</a> if you want to learn to code AND play with electronics at the same time 
 - <a href="https://themeshaper.com/2012/10/22/the-themeshaper-wordpress-theme-tutorial-2nd-edition/">Wordpress Theme Tutorial</a> While specific to one application, this tutorial series taught me more about PHP than anything else.
 
 
