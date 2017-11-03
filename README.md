@@ -268,11 +268,11 @@ A new program, with new things to notice:
 ## Assignments
 ### Examine the code
 - Hit run and play through the game.
-- Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following
-    `If/else` statements
-    An **is equal to** `==` condition in an `if` statement
-    User-defined functions that begin with `def`
-    Lines in the `adventure()` function that **call** those user-defined functions
+- Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following:  
+    `If/else` statements  
+    An **is equal to** `==` condition in an `if` statement  
+    User-defined functions that begin with `def`  
+    Lines in the `adventure()` function that **call** those user-defined functions  
 
 ### Modify the code
 When ready, start changing things up!
