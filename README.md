@@ -395,7 +395,7 @@ We're going to leave it there. In short, this example code has a whole bunch of 
 **How to use:**
 <p><img src="http://estesvalleylibrary.org/github/google-sheets.png" width="700px"></p>
 
-- Open the spreadsheet
+- [Open the spreadsheet](https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing)
 - Add the names of your tile classes to this spreadsheet in a fun pattern.
 - If you would like to add an enemy and/or object onto that tile, add them in the order `TileName|ItemName|EnemyName`, seperated by a pipe character `|`. If you would like a tile with an item but no enemy, do `TileName|ItemName|None`, and for an enemy but no item, `TileName|None|EnemyName`
 - File > Download as > .csv
