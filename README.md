@@ -5,9 +5,9 @@
 - To creatively modify example code to your desire and the best of your ability!
 
 ### Why Python?
-Python is a **high-level, dynamic** programming language commonly used for teaching, but it is by no means *only* for teaching… *(Instagram is written in Python, and YouTube used to be)*, so you're not limited!
+Python is a **high-level, dynamic** programming language commonly used for teaching, but it is by no means *only* for teaching *(Instagram is written in Python, and YouTube used to be)*, so you're not limited!
 
-Also, as the slide said, I thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials tend to be a little more fun. If you decide to continue pursuing programming, compare the Stackoverflow responses to Python questions versus, say, Javascript and you'll see what I mean.
+Also, thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials are just a little more fun.
 
 # Class materials
 ### Lessons
@@ -23,6 +23,10 @@ Also, as the slide said, I thought it was cool and nice. My theory is, because o
 
 # Modifying the Example Code
 Open one of the lesson links, hit the Remix icon in the top right corner of the pane, create an account with an email and password, then hit the green Remix button again. Now a copy of the lesson should be saved to your account.
+
+<img src="http://estesvalleylibrary.org/github/remix1.png" width="700px">
+
+<img src="http://estesvalleylibrary.org/github/remix2.png" width="700px">
 
 This copy belongs to you! I release it to you as open source software under CC0. (The portions of lesson 3 credited to Phillip Johnson are under the MIT license). Please use it and change it as you like.
 
@@ -64,7 +68,7 @@ Multiple-line comments are wrapped in triple quotes
 """ Multiline
 	comment """
 ```
-You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> to insert a single-line comment automatically
+You can select text, then hit <kbd>control</kbd> + <kbd>/</kbd> (or <kbd>command</kbd> + <kbd>/</kbd> on a Mac) to insert a single-line comment automatically
 
 ### Variables and their values
 A **variable** is a placeholder (I like to think of it as a little container, like a Tupperware) for a **value**. The value of the variable can __vary__ as your program runs. Variables can have any name, as long as it starts with a letter or an underscore. No spaces allowed!
@@ -102,7 +106,11 @@ is_eaten = True
 backpack = ['map', 'flashlight']
 ```
 Values in the list are **indexed** in the order you added them, so you can recall them by specifying the **index** number in brackets `[]`.  
-`print backpack[1]` would display `flashlight`, because indexes start from `0`, not `1`
+```python
+print backpack[1]
+```
+would display `flashlight`, because indexes start from `0`, not `1`
+
 
 **Dictionary:**
 Dictionaries are like lists, but instead of indexed values, they have **key-value pairs**. 
@@ -118,7 +126,7 @@ print lunchbox['sandwich']
 ``` 
 which would display `baloney`
 
-# Inputs and if/else statements
+## More vocabulary: inputs, if/else statements, functions, and loops
 ### input
 You can use the built-in `input()` feature to get input from the user:   
 ```python
@@ -197,7 +205,7 @@ Optionally, you can add an `else` as a catchall for everything that wasn’t cau
 ### function
 **Functions** are a little package of code that performs a task.  
 I think of them as a machine in a factory.   
-Python has some functions built in. We briefly saw `len()`, for example.  
+Python has some functions built in. We briefly saw `len()` when talking about conditions, for example.  
 
 You can (and should!) write your own functions, though!
 
@@ -208,8 +216,10 @@ def fruit_slicer(fruit):
   	return fruit
 ```
 
-First, start, or **define**, a function by writing `def`  
+First, we **declare** our user-**def**ined function by writing `def`  
+
 `fruit_slicer` is the name of the function  
+
 The parentheses are where we put a **parameter**, which is a placeholder for the real value we will eventually use. In this case, `fruit` is the parameter. The colon `:` is the end of the function heading. Any indented text after the colon will be inside the body of the function.
 
 We’re going to do a (silly) task to anything that comes inside the function- we’re going to add the word `" slices"` to it. Again, the parameter `fruit` is just a placeholder for whatever gets fed in there.
@@ -239,7 +249,8 @@ for apples in range(3):
 	print fruit_slicer('apple')
 ```
 
-It begins with `for`  
+It begins with `for`
+
 `apples` is just a placeholder, and the built-in function `range()` lets use choose how many times the loop should go around (in this case, `3`). So we’re saying *"for as many things as there are in a range of three… do the task inside the loop"*
 
 `for` loops get really handy when we’ve got a list of something and we want to do a task to every item in the list.
@@ -272,7 +283,7 @@ A new program, with new things to notice:
 - Switch to the <kbd>game.py</kbd> tab and read through it. Look for the following:  
     `If/else` statements  
     An **is equal to** `==` condition in an `if` statement  
-    User-defined functions that begin with `def`  
+    **User-defined functions** that begin with `def`  
     Lines in the `adventure()` function that **call** those user-defined functions  
 
 ### Modify the code
@@ -284,22 +295,24 @@ def my_first_function():
 ```
 - Call your new function on line 29
 ```python
-my_first_function()
+	my_first_function()
 ```
 - Make sure to run the program and play through to test it.
+
+### Then...
 - Add another new function below your first one
 ```python
 my_second_function():
 	print 'example message'
 ```
-- Add a new variable to your first function and assign the user input to it
+- Add a new **variable** to your first function and **assign** the user input to it
 ```python
 def my_first_function():
 	next_move = input('Choose right or left')
 	print 'example message'
 ```
 - In your first function, add an `if`/`else` statement that checks the user input and have either 
-the `if`, `elif`, or `else` statement call the second function
+the `if`, `elif`, or `else` statement **call** the second function
 ```python
 def my_first_function():
 	next_move = input('Choose right or left')
@@ -309,7 +322,7 @@ def my_first_function():
 		next_move == 'left':
 		print 'You were eaten by a second, larger dragon'
 	else:
-		print 'You didn't choose right or left, and as a result, you fell off a cliff'
+		print "You didn't choose right or left, and as a result, you fell off a cliff"
 ```
 - Run the program to test
 
@@ -320,6 +333,7 @@ This is **not** commonly considered a beginner-level topic, but I want to tell y
 - If you keep going with Python and programming, I want you to continue borrowing and modifying people's example code and weird tutorials, and some of them are going to be object oriented. 
 
 **You don't need to fully understand these concepts today (I don't know if I do either), I am just going to lay them gently onto you**
+
 *Disclaimer: This is not a great example of object-oriented programming. I took a really nice tutorial that was done correctly and basically picked it apart until I thought I could explain it, and a result some things are simplified to the point that they're not really done ...the right way... anymore. Basically, I took a nice ball of yarn, unwound it, and wound it back up into sort of a fuzzy wad. But it runs!*
 
 ## Objects and classes
@@ -351,7 +365,8 @@ class Player():
 It's a blueprint for a player! Let me take a very brief detour into metaphor.  
 Hopefully, you all have seen *The Bourne Identity*?
 
-```class supersoldier(name):
+```python
+class supersoldier(name):
 	def __init__(self, name):
 		self.name = name
 		self.inventory = [gun()]
@@ -390,7 +405,7 @@ We're going to leave it there. In short, this example code has a whole bunch of 
 - Modify the weapon child class named `ExampleWeapon` that starts on line 166
 - Hit run to check for errors!
 
-### Add class names to the map
+### Add your new tile, weapon, and enemy to the map
 - <a href="https://docs.google.com/spreadsheets/d/1jNg4cAAyT5vpmik1sfcOQSYiMXutGloqGH0SqYLSHGg/edit?usp=sharing">Here's the spreadsheet I used to make my game map</a>. The nice thing about using a spreadsheet is it lets your really visualize the map. When you export it as a csv, you'll get a smashed-together block of names and commans that's a lot harder to read, and you'll paste that into map.txt in the Code Your Own Adventure program.
 
 **How to use:**
