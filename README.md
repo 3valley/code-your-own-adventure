@@ -55,6 +55,28 @@ Trinket.io (and a lot of other editors you'll encounter!) has **syntax highlight
 
 This page also uses Python syntax highlighting, but to keep you guessing, it's a totally different color scheme. My apologies.
 
+***A special note about Python syntax: Watch your indentations***
+Unlike some other programming languages where code is only indented for readability, __indentation matters in Python___ and a missing indent or extra whitespace on the left side of your program can be the difference between working and non-working code!
+
+```python
+#incorrect - whitespace to the left
+ sandwich = "turkey club"
+
+#correct - no whitespace
+sandwich = "turkey club"
+```
+
+Here's an example of an improperly indented function (you'll learn more about functions later in the class).
+```python
+## incorrect - body of function has no indent
+def menu_printer(sandwich):
+print "the sandwich of the day is " + sandwich
+
+## correct - header of function has no indent, body of function has one indent
+def menu_printer(sandwich):
+	print "the sandwich of the day is " + sandwich
+```
+
 ### Comment
 **Comments** have no effect on the program, so you can use them to describe the code (and write notes to yourself). You can also **comment out** chunks of your program by placing comments in front of existing code. This is useful for testing things and diagnosing problems.
 
@@ -282,7 +304,29 @@ A new program, with new things to notice:
 ```python
 	import game
 ```
-- Some things should look a bit familiar. You might recognize a variable `player_name`, the`input()` function, and the `print` statements, 
+- Some things should look a bit familiar. You might recognize a variable `player_name`, the`input()` function, and the `print` statements.
+
+You will be nesting functions and if/else statements inside other functions in this lesson, so make sure to pay attention to your indents. 
+
+```python
+def blue_door_room():
+	"""So far, so good- the print statement, next_move variable, and if statement all have 1 indent,
+		putting them inside the body of the function blue_door_room"""
+	print("The door knob jiggles but nothing happens.")
+	next_move = input("Do you want to try the red door? Choose yes or no >")
+	
+    	if next_move == "yes":
+	# incorrect - this function call should have an additional indent to put it inside the body of the if statement
+    	red_door_room()
+
+## corrected version
+def blue_door_room():
+	print("The door knob jiggles but nothing happens.")
+	next_move = input("Do you want to try the red door? Choose yes or no >")
+	
+    	if next_move == "yes":
+    		red_door_room()
+```
 
 ## Your goals:
 ### Examine the code
