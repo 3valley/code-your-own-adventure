@@ -163,12 +163,12 @@ The symbol in the middle is called the **operator**. The operator here is `==`, 
 
 There are many operators and with them, options for writing conditions. Here are some others:  
 ```python
-if 3 > 4
+if 3 > 4:
 ```
 (*"if three is greater than four"*, evaluates to `False`)
 
 ```python
-if len('pumpkin') >= 7
+if len('pumpkin') >= 7:
 ```
 (*"if the length of the string ‘pumpkin’ is greater than or equal to seven"*, evaluates to `True`) 
 
