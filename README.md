@@ -311,7 +311,7 @@ def my_first_function():
 ### Then...
 - Add another new function below your first one
 ```python
-my_second_function():
+def my_second_function():
 	print 'example message'
 ```
 - Add a new **variable** to your first function and **assign** the user input to it
