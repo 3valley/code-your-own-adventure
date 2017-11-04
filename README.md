@@ -9,12 +9,10 @@ Python is a **high-level, dynamic** programming language commonly used for teach
 
 Also, I thought it was cool and nice. My theory is, because of its reputation, the community surrounding it is just a little friendlier and the tutorials are just a little more fun.
 
-# Class materials
-### New link
-<a href="https://trinket.io/library/trinkets/d44a396c68">NEW version of lesson 2</a>
+# Class materials 
 ### Lessons
 - <a href="https://trinket.io/python/dd5c840894" target="_blank">Lesson 1: CYOA Intro</a>
-- <a href="https://trinket.io/python/e7a618150f" target="_blank">Lesson 2: Simple Adventure</a>
+- <a href="https://trinket.io/library/trinkets/d44a396c68" target="_blank">Lesson 2: Simple Adventure</a> (fixed version!)
 - <a href="https://trinket.io/python/39024e9d81" target="_blank">Lesson 3: Code Your Own Adventure</a>
 
 ### Other materials
